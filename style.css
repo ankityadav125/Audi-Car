@@ -1,0 +1,544 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+nav {
+    height: 10vh;
+    width: 100%;
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding: 0 5vw;
+}
+
+.nav-part1 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1vw;
+}
+
+.nav-part1 img {
+    height: 10vh;
+}
+
+.nav-part1 a {
+    text-decoration: none;
+    color: grey;
+    font-size: 2vh;
+}
+
+.nav-part2 img {
+    padding-right: 3vw;
+    /* font-size: 3vh; */
+    height: 3.5vh;
+}
+
+.page1 {
+    height: 90vh;
+    width: 100%;
+    background-color: black;
+    background-image: url(page1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.page1-content {
+    padding: 5vh 5vw;
+    color: white;
+}
+
+.page1-content h2 {
+    font-size: 8vh;
+    font-weight: 100;
+}
+
+.page1-content p {
+    font-size: 2.5vh;
+    padding-top: 1.5vh;
+    font-weight: 100;
+    line-height: 4vh;
+    color: grey;
+}
+
+.page1-content h3 {
+    font-size: 3.5vh;
+    font-weight: 100;
+    line-height: 4vh;
+}
+
+.page1-btn {
+    padding-top: 3.5vh;
+}
+
+.page1-content button {
+    padding: 2vh 3vw;
+    font-size: 2vh;
+}
+
+.page1-btn button:first-child {
+    background-color: white;
+    border: none;
+}
+
+.page1-btn button:last-child {
+    background-color: transparent;
+    color: black;
+    border: 1px solid white;
+}
+
+.page2 {
+    height: 50vh;
+    width: 100%;
+    /* background-color: yellowgreen; */
+    padding: 5vh 5vw;
+}
+
+.page2 h3 {
+    max-width: 5vw;
+    font-size: 3vh;
+    font-weight: 100;
+    border-bottom: 2px solid black;
+    margin-bottom: 5px;
+}
+
+.page2-cars {
+    text-align: center;
+    width: 90vw;
+    height: 30vh;
+    /* overflow-x: scroll; */
+    overflow: auto;
+    white-space: nowrap;
+    align-items: center;
+}
+
+.cars-item {
+    height: 90%;
+    width: 25%;
+    /* background-color: green; */
+    margin-right: 10px;
+    display: inline-block;
+}
+
+
+
+
+.page3 {
+    height: 100vh;
+    width: 100%;
+    /* background-color: pink; */
+    padding: 5vw;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.page3-left {
+    height: 100%;
+    width: 50%;
+}
+
+.page3-left img {
+    height: 80vh;
+    object-fit: cover;
+    object-position: center;
+}
+
+
+
+.page3-right {
+    height: 100%;
+    width: 50%;
+    position: relative;
+}
+
+.page3-right-txt {
+    padding-left: 17vw;
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    transform: translate(-50%, -50%);
+}
+
+.page3-right-txt h1 {
+    font-size: 8vh;
+    line-height: 10vh;
+    font-weight: 100;
+    margin-bottom: 4vh;
+}
+
+.page3-right-txt button {
+    padding: 2.5vh 6vw;
+    font-size: 3vh;
+    border: 1px solid black;
+}
+
+.page4 {
+    min-height: 100vh;
+    width: 100%;
+    background-color: aquamarine;
+    background-image: url(page4.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    padding: 10vh;
+}
+
+.page4-content {
+    height: 50vh;
+    width: 40%;
+    /* background-color: red; */
+    backdrop-filter: blur(3px);
+    padding: 5vh;
+}
+
+.page4-content h2 {
+    font-size: 5vh;
+    margin-bottom: 3vh;
+    color: white;
+}
+
+.page4-content p {
+    font-size: 2.5vh;
+    color: grey;
+    line-height: 3.5vh;
+}
+
+.page4-btn {
+    padding: 3vh 0;
+}
+
+.btn1 {
+    padding: 1.5vh 2.5vw;
+    font-size: 3vh;
+    background-color: black;
+    color: white;
+    border: none;
+}
+
+.btn2 {
+    font-size: 3vh;
+    padding: 1.5vh 3vw;
+    background-color: transparent;
+    border: 1px solid black;
+    color: black;
+}
+
+.page5 {
+    min-height: 100vh;
+    width: 100%;
+    /* background-color: red; */
+    padding: 10vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+
+.page5-left {
+    height: 100%;
+    width: 50%;
+}
+
+.page5-left img {
+    height: 80vh;
+    object-fit: cover;
+    object-position: center;
+}
+
+.page5-right {
+    height: 100%;
+    width: 50%;
+    position: relative;
+}
+
+.page5-right-txt {
+    padding-left: 20vw;
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    transform: translate(-50%, -50%);
+}
+
+.page5-right-txt h1 {
+    font-size: 100;
+    font-size: 5vh;
+}
+
+.page5-btn {
+    display: flex;
+    padding: 5vh 0;
+    gap: 4px;
+}
+
+.page5-btn1 {
+    padding: 1.5vh 2vw;
+    font-size: 3vh;
+    background-color: black;
+    color: white;
+    border: none;
+}
+
+.page5-btn2 {
+    font-size: 3vh;
+    padding: 2vh 3vw;
+    background-color: transparent;
+    border: 1px solid black;
+    color: black;
+}
+
+
+.page6 {
+    height: 100vh;
+    width: 100%;
+    /* background-color: green; */
+    position: relative;
+}
+
+.page6-container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    padding: 10vh 0;
+}
+
+.page6-left {
+    padding: 5vh;
+    height: 80vh;
+    width: 35%;
+    background-color: black;
+    color: white;
+    position: relative;
+}
+
+.page6-left h1 {
+    text-align: center;
+    font-size: 7vh;
+}
+
+.page6-left button {
+    position: absolute;
+    text-align: center;
+    bottom: 0;
+    text-align: center;
+    left: 5vw;
+    margin-bottom: 10vh;
+    padding: 2.5vh 4vw;
+    font-size: 3vh;
+    border: 1px solid white;
+    background-color: transparent;
+    color: white;
+
+}
+
+.page6-right {
+    height: 80vh;
+    width: 65%;
+    /* background-color: yellow; */
+    color: white;
+}
+
+.page6-right img {
+    height: 100%;
+    width: 100%;
+}
+
+.page7 {
+    height: 100vh;
+    width: 100%;
+    /* background-color: red; */
+    display: flex;
+}
+
+.page7-left {
+    /* padding: 5vw; */
+    height: 100%;
+    width: 55%;
+    background-color: black;
+    position: relative;
+}
+
+.page7-text {
+    padding: 5vw;
+    position: absolute;
+    bottom: 5vh;
+    color: white;
+}
+
+.page7-text h3 {
+    font-size: 6vh;
+    line-height: 7vh;
+    font-weight: 100;
+}
+
+.page7-text h2 {
+    padding: 3vh 0;
+    font-size: 8vh;
+    font-weight: bold;
+}
+
+.page7-text button {
+    padding: 2vh 3vw;
+    font-size: 2.5vh;
+    font-weight: bold;
+    color: white;
+    border: 1px solid white;
+    background-color: transparent;
+}
+
+
+
+.page7-right {
+    height: 100%;
+    width: 45%;
+    /* background-color: blue; */
+}
+
+.page7-right img {
+    height: 100%;
+    width: 100%;
+}
+
+.page8 {
+    min-height: 100vh;
+    width: 100%;
+    /* background-color: aqua; */
+    padding: 10vh;
+}
+
+.page8-part1 {
+    height: 70vh;
+    width: 100%;
+    /* background-color: red; */
+}
+
+.page8-part1 h1 {
+    font-size: 5vh;
+    padding: 3vh 0;
+}
+
+.pag8-part1-post {
+    display: flex;
+    justify-content: space-between;
+}
+
+.page8-part1-post-item {
+    max-width: 33%;
+}
+
+.page8-part1-post-item img {
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+}
+
+.page8-part1-post-item img:hover {
+    scale: .9;
+    cursor: pointer;
+    transition: .7s ease-in-out;
+}
+
+
+.page8-part1-post-item p {
+    padding: 1vh 0;
+}
+
+.page8-part2 {
+    height: 80vh;
+    width: 100%;
+    /* background-color: yellow; */
+}
+
+
+
+.page8-part2 h1 {
+    font-size: 5vh;
+    padding: 3vh 0;
+}
+
+.pag8-part2-post {
+    display: flex;
+    justify-content: space-between;
+}
+
+.page8-part2-post-item {
+    max-width: 34.5%;
+}
+
+.page8-part2-post-item img {
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.page8-part2-post-item img:hover {
+    scale: .9;
+    cursor: pointer;
+    transition: .7s ease-in-out;
+}
+
+.page8-part2-post-item p {
+    padding: 1vh 0;
+}
+
+
+.footer1 {
+    min-height: 50vh;
+    width: 100%;
+    background-color: black;
+    color: white;
+    padding: 2vh 5vw;
+    position: relative;
+}
+
+.footer1-post {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid grey;
+}
+
+.footer1-post-item {
+    max-width: 20%;
+}
+
+.footer1-post-item h2 {
+    padding: 4vh 0;
+    font-weight: 100;
+}
+
+.footer1-post-item p {
+    padding: 1vh 0;
+    font-weight: 100;
+}
+
+.footer1-icon {
+    right: 0;
+    bottom: 0;
+    padding: 2vh;
+    position: absolute;
+    font-size: 3vh;
+}
+
+/* .footer2{
+    height: 40vh;
+    width: 100%;
+    background-color: black;
+    color: white;
+    padding:0 5vw;
+}
+
+.footer2-menu{
+    display: flex;
+} */
